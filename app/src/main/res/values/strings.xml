@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyGithubTask</string>
+
+    <string name="text_btn_login">Login</string>
+    <string name="text_followers">Followers</string>
+    <string name="text_following">Following</string>
+    <string name="text_menu_profile">Profile</string>
+    <string name="text_logout">Logout</string>
+    <string name="repository">Repository</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+</resources>

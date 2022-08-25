@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/repositoryFragment">
+
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.example.mygithubtask.presentation.my_profile_screen.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" >
+        <action
+            android:id="@+id/action_myProfileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repositoryFragment"
+        android:name="com.example.mygithubtask.presentation.repository_screen.RepositoryFragment"
+        android:label="fragment_repository"
+        tools:layout="@layout/fragment_repository" />
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.example.mygithubtask.presentation.users_screen.UsersFragment"
+        android:label="fragment_users"
+        tools:layout="@layout/fragment_users" >
+
+        <action
+            android:id="@+id/action_usersFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mygithubtask.presentation.settings_screen.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.mygithubtask.presentation.users_detail_screen.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>
